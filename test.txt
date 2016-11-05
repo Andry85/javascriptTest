@@ -1,10 +1,15 @@
-gytytyytyyt
-rtrd rtd tr
-zsdz
-drrere
+function showPrimes(n) {
 
-new text in the new branch
+  for (var i = 2; i < n; i++) {
+    if (!isPrime(i)) continue;
 
-jiojoi
-joijo
-]yygyu
+    alert(i);  // простое
+  }
+}
+
+function isPrime(n) {
+  for (var i = 2; i < n; i++) {
+    if ( n % i == 0) return false;
+  }
+  return true;
+}
